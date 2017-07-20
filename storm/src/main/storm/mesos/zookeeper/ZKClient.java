@@ -20,7 +20,7 @@ public class ZKClient {
   private static ZooKeeper zk;
   private static ZKConnection zkConnection;
 
-  // Default ZKClient for localhost
+  /** Default ZKClient for localhost */
   public ZKClient() {
     try {
       zkConnection = new ZKConnection();
@@ -30,7 +30,7 @@ public class ZKClient {
     }
   }
 
-  // connString is
+  /** connString is a comma separated string of separated host:port pairs, each corresponding to a zk server */
   public ZKClient(String connString, int sessionTimeout) {
     try {
       zkConnection = new ZKConnection();

@@ -22,7 +22,6 @@ public class ZKWatcher implements Watcher, StatCallback {
 
   @Override
   public void processResult(int i, String s, Object o, Stat stat) {
-
   }
 
   @Override
