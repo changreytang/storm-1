@@ -34,7 +34,7 @@ public class ZKConnection {
         }
       }
     });
-    connLatch.wait();
+    connLatch.await();
     LOG.info("ZooKeeper connection established");
     return zk;
   }
